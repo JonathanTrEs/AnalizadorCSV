@@ -1,0 +1,56 @@
+html *
+{
+   font-size: large;
+   font-family: Arial;
+}
+
+h1 { 
+  text-align: center; 
+  font-size: x-large; 
+  text-shadow: 0 1px 1px #000;
+  text-shadow: 0 1px 1px rgba(0,0,0,.9) !important;
+  font-weight: bold !important;
+}
+
+th, td { vertical-align: top; text-align: right; }
+#finaltable:hover td { background-color: blue; }
+tr:nth-child(odd) { background-color:#eee; }
+tr:nth-child(even) { background-color:#00FF66; }
+input { text-align: right; border: none; } /* Align input to the right */
+textarea { border: outset; border-color: blue; }
+table { border: inset; border-color: blue; }
+table.center { margin-left:auto; margin-right:auto; }
+#result { border-color: blue; }
+tr.error { background-color: red; }
+body { background-image:url('fondo.jpg'); }
+
+
+        /* Nieve en el fondo */
+	
+@keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-moz-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-webkit-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+@-ms-keyframes snow {
+0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+#contenedor-nieve {
+background-image: url(http://lh3.googleusercontent.com/-k6mAvDmeu4Q/UMefU6JI32I/AAAAAAAADpM/zdjTclnGDhM/s500/snow.png), url(http://lh6.googleusercontent.com/-8wOkQAdxfgg/UMefVfmte0I/AAAAAAAADpU/aE4HxfiXD88/s400/snow3.png), url(http://lh5.googleusercontent.com/-fhO2tXwKP9M/UMefVCohCOI/AAAAAAAADpQ/nFVnzK1W0xw/s300/snow2.png);
+-webkit-animation: snow 20s linear infinite;
+-moz-animation: snow 20s linear infinite;
+-ms-animation: snow 20s linear infinite;
+animation: snow 20s linear infinite;
+}
